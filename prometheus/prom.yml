@@ -7,7 +7,7 @@ scrape_configs:
       - targets: ['localhost:9090']
 
   - job_name: 'polkadot-analytics-service'
-     scheme: http
+     scheme: https
      static_configs:
        - targets: ['polkadot-railway-production.up.railway.app']
 
