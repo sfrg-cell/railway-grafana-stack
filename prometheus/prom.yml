@@ -9,7 +9,7 @@ scrape_configs:
   - job_name: 'polkadot-analytics-service'
      scheme: http
      static_configs:
-       - targets: ['polkadot-railway-production.up.railway.app:5336']
+       - targets: ['polkadot-railway-production.up.railway.app']
 
   #  ? TODO: add your services here
   # - job_name: 'your-job-name'
