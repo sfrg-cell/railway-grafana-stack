@@ -4,15 +4,5 @@ global:
 scrape_configs:
   - job_name: 'polkadot-app'
     metrics_path: '/metrics'
-    scheme: https
     static_configs:
       - targets: ['polkadot-railway-production.up.railway.app']
-
-  #  ? TODO: add your services here
-  # - job_name: 'your-job-name'
-  #   scheme: https
-  #   static_configs:
-  #     - targets: ['URL_GOES_HERE']
-  #   basic_auth:
-  #     username: HTTP_AUTH_USERNAME_GOES_HERE
-  #     password: HTTP_AUTH_PASSWORD_GOES_HERE
