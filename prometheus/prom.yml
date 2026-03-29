@@ -5,11 +5,10 @@ scrape_configs:
   - job_name: 'prometheus'
     static_configs:
       - targets: ['localhost:9090']
-
   - job_name: 'polkadot-analytics-service'
-     scheme: https
-     static_configs:
-       - targets: ['polkadot-railway-production.up.railway.app']
+    scheme: https
+    static_configs:
+      - targets: ['polkadot-railway-production.up.railway.app']
 
   #  ? TODO: add your services here
   # - job_name: 'your-job-name'
