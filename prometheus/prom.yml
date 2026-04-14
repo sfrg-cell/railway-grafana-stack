@@ -4,5 +4,8 @@ global:
 scrape_configs:
   - job_name: 'polkadot-app'
     metrics_path: '/metrics'
+    scheme: https
+    tls_config:
+      insecure_skip_verify: true
     static_configs:
-      - targets: ['polkadot-railway.railway.internal:8080']
+      - targets: ['polkadot-railway-production.up.railway.app:443']
